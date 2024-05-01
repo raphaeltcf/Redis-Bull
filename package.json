@@ -1,0 +1,32 @@
+{
+  "name": "redis-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ts-node-dev --respawn --transpile-only ./src/index.ts",
+    "dev": "nodemon ./src/index.ts",
+    "dev:queue": "nodemon ./src/server/index.ts"
+  },
+  "author": "Raphael Torres",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "bull": "^4.12.2",
+    "bull-board": "^0.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0",
+    "sequelize-typescript": "^2.1.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/bull": "^4.10.0",
+    "@types/bull-board": "^2.0.0",
+    "@types/nodemailer": "^6.4.14"
+  }
+}
